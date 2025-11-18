@@ -51,7 +51,7 @@ streamlit run inference_app.py
 
 ## Dataset
 The project uses pharmaceutical instruction data stored in S3:
-- Bucket: `s3://llm-finetune-dataset-sunny/datasets/`
+- Bucket: `s3://llm-finetune-dataset-monika/datasets/`
 - Format: CSV with instruction, input, output columns
 
 ## Model Configuration
