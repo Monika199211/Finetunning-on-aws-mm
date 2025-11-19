@@ -2,9 +2,13 @@ import streamlit as st
 import requests
 import json
 import os
+from dotenv import load_dotenv
 
-API_URL = os.getenv("API_URL")  # Replace with your actual API Gateway endpoint
-API_KEY = os.getenv("API_KEY")  # Replace with your actual API key if needed
+# Load environment variables from .env file
+load_dotenv()
+
+API_URL = os.getenv("API_URL")
+API_KEY = os.getenv("API_KEY")
 
 st.set_page_config(page_title="Inference App", layout="wide")
 st.title("Inference Application")
