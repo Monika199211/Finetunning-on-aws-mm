@@ -65,7 +65,7 @@ def lambda_handler(event, context):
     result = json.loads(resp["Body"].read().decode())
 
     log_item = {
-            "request_id": f"{int(time.time()*1000)}#{context.aws_request_id}",
+            "id": f"{int(time.time()*1000)}#{context.aws_request_id}",
             "prompt": text,
             "response": safe_json(result),
             "timestamp": str(int(time.time()))
