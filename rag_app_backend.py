@@ -130,7 +130,7 @@ vector_store.add_documents(docs)
 
 retriever = vector_store.as_retriever(
     search_type="mmr",
-    search_kwargs={"k": 3}
+    search_kwargs={"k": 1}
 )
 
 def format_docs(docs):
